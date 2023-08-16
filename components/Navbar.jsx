@@ -1,24 +1,26 @@
-import Image from 'next/image'
-import { Account } from './Account'
+import Image from 'next/image';
 
-const Navbar = () => {
-    return (
-        <nav className="">
-            <div className="">
-            <Image
-            src="/logo.png"
-            width={64}
-            height={64}
-            alt="Picture of the author" />
+import { Account } from './Account';
+
+function Navbar() {
+  return (
+    <nav className="">
+      <div className="">
+        <Image
+          src="/logo.png"
+          width={64}
+          height={64}
+          alt="Picture of the author"
+        />
         <h1 className="text-2xl font-bold">
-            Astrolabe Expeditions
+          Astrolabe Expeditions
         </h1>
-            </div>
-            <div className="ml-auto">
-                <Account />
-            </div>
-        </nav>
-    )
+      </div>
+      <div className="ml-auto">
+        <Account />
+      </div>
+    </nav>
+  );
 }
 
-export { Navbar }
+export { Navbar };

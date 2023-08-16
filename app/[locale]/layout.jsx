@@ -1,17 +1,14 @@
-
-import "@/styles/global.css"
 import { useLocale } from 'next-intl';
+
+import '@/styles/global.css';
 
 export const metadata = {
   title: 'Astrobale Expeditions - Data platform',
   description: 'Platform from the Astrobale Expeditions sensor',
-}
+};
 
-
-const RootLayout = ({ children }) => {
-
+function RootLayout({ children }) {
   const locale = useLocale();
-
 
   return (
     <html lang={locale}>
@@ -19,7 +16,7 @@ const RootLayout = ({ children }) => {
         {children}
       </body>
     </html>
-  )
+  );
 }
 
-export default RootLayout
+export default RootLayout;

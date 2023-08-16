@@ -1,12 +1,12 @@
-import { Navbar } from "./Navbar"
+import { Navbar } from './Navbar';
 
-const Header = () => {
-    return (
-        <header className='flex flex-col items-center'>
-            <Navbar />
+function Header() {
+  return (
+    <header className="flex flex-col items-center">
+      <Navbar />
 
-        </header>
-    )
+    </header>
+  );
 }
 
-export { Header }
+export { Header };
